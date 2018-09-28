@@ -11,6 +11,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pwa": "gulp rmmockup && gulp pwa && ionic build --prod --project pwa",
+    "diagram": "./diagram.sh",
+    "docs": "typedoc --out ./docs ./src/app/services/**/*.ts --mode modules --module commonjs --umlFormat svg --umlLocation local --umlSeperateClassDetailView true --umlComplete detail",
     "pwa-staging": "gulp rmmockup && gulp staging && gulp pwa && ionic build --prod --project pwa -c staging"
   },
   "dependencies": {
@@ -114,6 +116,8 @@
     "replace-in-file": "^3.4.2",
     "ts-node": "~7.0.1",
     "tslint": "~5.11.0",
+    "typedoc": "^0.12.0",
+    "typedoc-plantuml": "git://github.com/0815fox/typedoc-plantuml.git",
     "typescript": "~2.9.2"
   },
   "description": "Fluster",
